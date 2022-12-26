@@ -36,10 +36,15 @@
       <div class="backdrop is-hidden " data-modal>
     <div class="modal">
       <form class="form">
+        <button data-modal-close class="modal-button">
+          <svg width="8" height="8">
+            <use href="./images/sprite2.svg#icon-close-black"></use>
+          </svg>
+        </button>
         <p class="title-form">Leave your contacts and we will call you back</p>
       <div class="form-field">
         <label for="name" class="label">Name</label>
-        <input class="grup" type="text" name="name" id="name" autofocus autocomplete="on"/>
+        <input class="grup" type="text" name="name" id="name" autofocus autocomplete="on">
         
           <svg class="icon-form" width="12" height="12">
             <use href="./images/sprite2.svg#icon-Vector-1"></use>
@@ -47,14 +52,14 @@
       </div>
       <div class="form-field">
         <label for="tel" class="label">Phone</label>
-        <input class="grup" type="tel" name="name" id="tel" autocomplete="on" />
+        <input class="grup" type="tel" name="name" id="tel" autocomplete="on">
           <svg class="icon-form" width="13" height="13">
             <use href="./images/sprite2.svg#icon-2" ></use>
           </svg>
       </div>
       <div class="form-field">
         <label for="mail" class="label">Email</label>
-        <input class="grup" type="email" name="mail" id="mail" autocomplete="on" />
+        <input class="grup" type="email" name="mail" autocomplete="on" id="email">
           <svg class="icon-form" width="15" height="12">
             <use href="./images/sprite2.svg#icon-3"></use>
           </svg>
@@ -63,30 +68,21 @@
         <label for="comment" class="label">Comment</label>
         <textarea class="holder" name="comment" id="comment" rows="10" placeholder="Text input"></textarea>
       </div>
+      
       <div class="accept">
       
         <label class="label-checkbox-modal"  for="css">
-        <input class="checkbox-hero" type="checkbox" name="accept" value="css" id="css" />
+        <input class="checkbox-hero" type="checkbox" name="accept" value="css" id="css">
             <svg class="checkbox-hero-icon" width="16" height="16">
                   <use href="./images/sprite2.svg#icon-checkbox"></use>
             </svg>
           I accept the terms and conditions of the&nbsp; <a href="./index.html" class="Privacy-Policy">Privacy
             Policy</a>
         </label>
-           
-        
-        
-        
-        
-        
       </div> 
         <button class="send" type="submit">Send</button>
-      </form>
-      <button data-modal-close class="modal-button" >
-      <svg width="8" height="8">
-        <use href="./images/sprite2.svg#icon-close-black"></use>
-      </svg>
-      </button>
+      
+    </form>
     </div>
   </div>
     </div>
@@ -367,12 +363,8 @@
       </a>
       </li>
     </ul>
-
   </div>
-
 </section>
-
-
     <!--Futer-->
     <footer class="section-footer">
 
@@ -417,23 +409,18 @@
           </a>
           </li>
         </ul>
-          </div>
+      </div>
+      <div class="futer-Subscribe">
+          <p class="Subscribe-text">Subscribe</p>
           <form class="form-futer">
-            <div class="submit-box">
-              <label class="subscribe-futer" for="Subscribe">Subscribe</label>
-              <div class="submit">
               <input class="input-futer" type="email" name="mail" placeholder="E-mail" id="mail">
-              <div class="futer-button-icon">
               <button class="futer-button" type="submit">Subscribe
                 <svg class="svg-futer" width="24" height="20">
                   <use href="./images/sprite2.svg#icon-icon-send-1"></use>
                 </svg>
-                </button>
-              
-              </div>
-              </div>
-              </div>
+              </button> 
           </form>
+        </div>
         </div>
       </div>
       

@@ -127,6 +127,7 @@ ul {
     position: relative;
 }
 .studio::after {
+
     position: absolute;
     content: " ";
     display: block;
@@ -136,6 +137,12 @@ ul {
     background-color: #4D5AE5;
     bottom: 0%;
     left: 0%;
+}
+.studio {
+    color: #4D5AE5;
+}
+.heder-portfolio {
+    color: #4D5AE5;
 }
 .heder-portfolio::after {
     position: absolute;
@@ -577,7 +584,6 @@ transform: translate(0, 0);
 .is-hidden {
     opacity: 0;
     pointer-events: none;
-    
 }
 .backdrop .is-hidden .modal {
     transform: translate(-50%, -50%) scale(0.9);
@@ -587,16 +593,18 @@ transform: translate(0, 0);
     position: absolute;
     top: 50%;
     left: 50%;
-    min-width: 408px;
-    min-height: 576px;
+    width: 408px;
+    height: 584px;
     background-color: rgba(252, 252, 252, 1);
     border-radius: 4px;
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms var(--time-function) opacity 250ms var(--time-function);
-    border-radius: 4px;
-    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2) 0px 1px 3px rgba(0, 0, 0, 0.12) 0px 1px 1px rgba(0, 0, 0, 0.14);
-
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14);
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 24px;
+    padding-top: 72px;
 }
 .modal-button {
     position: absolute;
@@ -605,7 +613,6 @@ transform: translate(0, 0);
     display: flex;
     align-items: center;
     justify-content: center;
-    
     width: 24px;
     height: 24px;
     border-radius: 50%;
@@ -623,27 +630,27 @@ transform: translate(0, 0);
     border:#404BBF;
 }
 .form {
-    width: 360px;
-    margin-left: auto;
-    margin-right: auto;
-
+    width: 100%;
 }
 .form-field {
     position: relative;
     display: flex;
     flex-direction: column;
-    margin-bottom: 8px;
-   
 }
+.form-field:nth-child(-n+4) {
+    margin-bottom: 8px;
+}
+
+
 .title-form {
     font-weight: 700;
     font-size: 16px;
     align-items: center;
-    margin-top: 68px;
+    
     margin-bottom: 16px;
 }
+
 .form-field input {
-    
     padding-top: 11px;
     padding-bottom: 11px;
     padding-left: 38px;
@@ -652,8 +659,6 @@ transform: translate(0, 0);
     border: 1px;
     border-radius: 4px;
     background-color: #FCFCFC;
-    
-    
 }
 .holder {
     padding-top: 8px;
@@ -662,18 +667,18 @@ transform: translate(0, 0);
     outline: 1px solid rgba(33, 33, 33, 0.2);
     border: 1px;
     border-radius: 4px;
-    color: #8E8F99;
     background-color: #FCFCFC;
-
+    resize: none;
+    height: 120px;
 }
 .label {
+    display: block;
     font-size: 12px;
     font-weight: 400;
     color: #8E8F99;
     padding: 0px;
     text-align: left;
     margin-bottom: 4px;
- 
 }
 
 
@@ -681,7 +686,7 @@ transform: translate(0, 0);
     display: flex;
     align-items: baseline;
     text-align: center;
-    margin-top: 18px;
+    margin-top: 16px;
     margin-bottom: 24px;
     color: #8E8F99;
     font-weight: 400;
@@ -709,14 +714,14 @@ transform: translate(0, 0);
 .send {
     background-color: var(--accent-color);
     color: #ffffff;
-    margin-bottom: 24px;
     width: 169px;
     height: 56px;
     font-weight: 500;
     font-size: 16px;
-    border: solid var(--accent-color);
+    border: 1px solid var(--accent-color);
     border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    padding: 0px
 }
 
 
@@ -725,35 +730,19 @@ transform: translate(0, 0);
     position: absolute;
     bottom: 14px;
 }
-.submit-box {
-    display: flex;
-    flex-direction: column;
-}
-.submit {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 16px;
-}
-.subscribe-futer {
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 1.5;
-    color: #FFFFFF;
-    margin-bottom: 16px;
-    margin-left: 80px;
-}
+
+
 .input-futer {
     width: 264px;
     height: 40px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    margin-left: 80px;
     background-color: #2E2F42;
     padding-left: 16px;
     padding-top: 8px;
     padding-bottom: 8px;
+    color: #FFFFFF;
 }
 .futer-button {
     position: relative;
@@ -771,16 +760,12 @@ transform: translate(0, 0);
     padding-top: 8px;
     padding-bottom: 8px;
     padding-left: 24px;
+    padding-right: 24px;
     align-items: center;
     border-color: transparent;
-    
+    justify-content: space-between;
 }
-.svg-futer {
-    position: absolute;
-    fill: #31D0AA;
-    top: 10px;
-    right: 24px;
-}
+
 
 .grup {
     position: relative;
@@ -825,4 +810,19 @@ align-items: center;
 background-color: #404BBF;
 border: #404BBF;
 border: 1.25px solid #404BBF;
+}
+.Subscribe-text {
+    font-weight: 600;
+    color: #FFFFFF;
+    line-height: 1.5;
+
+}
+.form-futer {
+    display: flex;
+}
+.Subscribe-text {
+    padding-bottom: 17px;
+}
+.futer-Subscribe {
+    padding-left: 80px;
 }
