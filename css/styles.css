@@ -475,10 +475,11 @@ ul {
     font-size: 20px;
     line-height: 1.2;
     font-weight: 600;
+    margin-bottom: 8px;
 }
 .portfolio-text {
     line-height: 1.5;
-    title-futer    margin-top: 8px;
+    margin-top: 8px;
     color: #434455;
 }
 .section-footer {
@@ -623,7 +624,6 @@ transform: translate(0, 0);
     background-color: #404BBF;
     fill: #FFFFFF;
 }
-
 .modal-button:focus {
     background-color: #404BBF;
     fill: #FFFFFF;
@@ -640,8 +640,6 @@ transform: translate(0, 0);
 .form-field:nth-child(-n+4) {
     margin-bottom: 8px;
 }
-
-
 .title-form {
     font-weight: 700;
     font-size: 16px;
@@ -649,7 +647,6 @@ transform: translate(0, 0);
     
     margin-bottom: 16px;
 }
-
 .form-field input {
     padding-top: 11px;
     padding-bottom: 11px;
@@ -680,8 +677,6 @@ transform: translate(0, 0);
     text-align: left;
     margin-bottom: 4px;
 }
-
-
 .accept {
     display: flex;
     align-items: baseline;
@@ -709,8 +704,6 @@ transform: translate(0, 0);
     clip-path: inset(50%);
     margin: -1px;
 }
-
-
 .send {
     background-color: var(--accent-color);
     color: #ffffff;
@@ -723,15 +716,10 @@ transform: translate(0, 0);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     padding: 0px
 }
-
-
-
 .icon-form {
     position: absolute;
     bottom: 14px;
 }
-
-
 .input-futer {
     width: 264px;
     height: 40px;
@@ -763,18 +751,15 @@ transform: translate(0, 0);
     padding-right: 24px;
     align-items: center;
     border-color: transparent;
+    letter-spacing: 0.04em;
     justify-content: space-between;
 }
-
-
 .grup {
     position: relative;
     transition-property: outline;
     transition-duration: 250ms;
     transition-timing-function: var(--time-function);
-
 }
-
 .icon-form {
 position: absolute;
 left: 19px;
@@ -782,30 +767,23 @@ transition-property: fill;
 transition-duration: 250ms;
 transition-timing-function: var(--time-function);
 }
-
 .grup:focus+.icon-form {
     fill: var(--accent-color);
 }
-
 .grup:focus {
 outline: 1px solid var(--accent-color);
 }
-
 .checkbox-hero-icon {
     border: 1.25px solid #2E2F42;
     border-radius: 2px;
     fill: #F4F4FD;
     margin-right: 8px;
-    background-color: #F4F4FD;
-    
+    background-color: #F4F4FD;  
 }
 .label-checkbox-modal {
 display: flex;
 align-items: center;
-
 }
-
-
 .checkbox-hero:checked ~ .checkbox-hero-icon {
 background-color: #404BBF;
 border: #404BBF;
@@ -815,13 +793,13 @@ border: 1.25px solid #404BBF;
     font-weight: 600;
     color: #FFFFFF;
     line-height: 1.5;
-
+    letter-spacing: 0.02em;
 }
 .form-futer {
     display: flex;
 }
 .Subscribe-text {
-    padding-bottom: 17px;
+    margin-bottom: 17px;
 }
 .futer-Subscribe {
     padding-left: 80px;
